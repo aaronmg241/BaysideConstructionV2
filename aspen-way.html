@@ -30,7 +30,7 @@
 			<h2>Aspen Way</h2>
 			<a href='index.html'>Back</a>
 		</header>
-		<ul class='image-gallery single-home-view'>
+		<ul class='image-gallery single-home-view' style="display: none;">
 			<li>
 				<img src='images/aspen_way/living-room1.jpg' alt='Living room 1' />
 			</li>
@@ -65,8 +65,9 @@
 		<script>
 			// JavaScript to show the page after all images are loaded
 			window.addEventListener('load', function () {
-				document.body.style.visibility = 'visible';
-			});
+				const list = document.getElementsByName('ul')
+				list[0].style.display = 'block'
+			})
 		</script>
 	</body>
 </html>
